@@ -1,5 +1,4 @@
 /* Stacie Niedbala */
-<!-- ~~~~~~~~~~ TWITTER CARD TAGS ~~~~~~~~~~ -->
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -13,37 +12,35 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-    display: block;
+	display: block;
 }
 body {
-    line-height: 1;
+	line-height: 1;
 }
-
 ol, ul {
-    list-style: none;
+	list-style: none;
 }
 blockquote, q {
-    quotes: none;
+	quotes: none;
 }
-
 blockquote:before, blockquote:after,
 q:before, q:after {
-    content: '';
-    content: none;
+	content: '';
+	content: none;
 }
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
 :root {
@@ -63,7 +60,7 @@ table {
     position: absolute;
     left: -10000px;
     top: auto;
-    width: 1 px;
+    width: 1px;
     height: 1px;
     overflow: hidden;
 }
@@ -86,7 +83,7 @@ body {
 header {
     color: var(--black);
     padding: 1rem;
-    width: calc(100%-2rem);
+    width: 99%;
 }
 
 form {
@@ -98,9 +95,9 @@ header div {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-column-template: 1fr 3fr;
+    grid-template-columns: 1fr 3fr;
     gap: 0.25REM;
-    aligh-items: center;
+    align-items: center;
 }
 
 header svg {
@@ -118,7 +115,7 @@ h1 {
 
 h2 {
     font-family: Molle, cursive;
-    font-size: 1.543m;
+    font-size: 1.5rem;
     margin: 1rem 0;
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
@@ -129,7 +126,7 @@ h3 {
     font-family: Molle, cursive;
     font-size: 1.15rem;
     margin: 0.5rem 0;
-    align: center;
+    text-align: center;
 
 }/*Hidden Heading Styles */
 
@@ -137,7 +134,7 @@ h3 {
     position: absolute;
     left: -10000px;
     top: auto;
-    width: 1 px;
+    width: 1px;
     height: 1px;
     overflow: hidden;
 }
@@ -147,13 +144,13 @@ q, small, button, form {
 }
 
 h4 {
-    align:center;
+    text-align:center;
 }
 
 /*Navigation */
 nav {
     font-family: Montserrat, sans-serif;
-    grid-columns: 1/-1;
+    grid-column: 1/-1;
 
 }
 
@@ -206,7 +203,7 @@ p {
 /*Main*/
 
 main {
-    width: calc(100%-2rem);
+    width: 98%;
     max-width: 1100px;
     margin: 1rem auto;
     padding: 1rem;
@@ -231,7 +228,7 @@ main section {
 
 #plan h3 {
     color: var(--dark-gray);
-    padding: 0.5rem auto 5rem auto;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     border-radius: 0.25rem 0.25rem 0 0;
     margin-bottom:0;
     text-align: center;
@@ -260,7 +257,7 @@ main section {
 }
 
 #plan a:hover {
-    color: var(--purple);
+    color: var(--light-gray);
     background-color: var(--purple);    
 }
 
@@ -307,7 +304,7 @@ main section {
 
 #about h4, p {
     padding: 0.0;
-    background-color: var(----blue);
+    background-color: var(--blue);
     color: var(--dark-gray);
     border-radius: 0 0 0.25rem 0.25rem;
     grid-column:1/-1;
@@ -316,7 +313,7 @@ main section {
 
 #about svg {
     display: block;
-    width: 75%max-width: 150px;
+    width: 75%; max-width: 150px;
     margin: 0 auto;
 }
 
@@ -353,7 +350,7 @@ footer a{
 }
 
 nav a:hover {
-    backgoround-color: var(--purple);
+    background-color: var(--purple);
     color: var(--yellow);
 }
 
@@ -406,7 +403,7 @@ nav a:hover {
 #plan section {
     display: flex;
     flex-direction: column;
-    justify-content: spaci-between;
+    justify-content: space-between;
     background-color: var(--yellow);
     border-radius: 0.25rem;
     border-color: white;
@@ -417,7 +414,7 @@ nav a:hover {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-#about p:first-oftype {
+#about p:first-of-type {
     grid-column:1/3;
 }
 
@@ -437,17 +434,15 @@ nav a:hover {
 }
 }
 
-*/Medium*/
+/*Medium*/
 
 @media screen and (min-width: 750px) {
 
     #plan, #about, #testimonials, #mdestinations {
         display: grid;
-        grid-template-columns: repeat (3, 1fr);
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 1rem;
     }
-
-    #
 
 }
 
